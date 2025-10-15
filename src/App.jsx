@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/my-portfolio">
       <div className="app-container">
         <Sidebar />
 
