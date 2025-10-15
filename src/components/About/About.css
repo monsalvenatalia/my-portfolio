@@ -1,0 +1,87 @@
+/* src/components/About.css */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.avatar {
+  width: 180px !important;
+  height: 180px !important;
+  border-radius: 50%;
+  border: 3px solid var(--accent-color);
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+.about-title {
+  color: var(--accent-color);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-text {
+  max-width: 500px;
+  color: var(--muted-text);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.info-card {
+  background-color: var(--sidebar-bg);
+  color: var(--text-color);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.know-more {
+  background: none;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.know-more:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
+.more-text {
+  max-width: 600px;
+  margin-top: 1rem;
+  color: var(--text-color);
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
