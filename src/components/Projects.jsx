@@ -33,18 +33,26 @@ export default function Projects() {
                 </TabButton>
             </menu>
             {!selectedProject ? (
-            <p>Please select a project.</p>
+            <p></p>
             ) : (
                 <div id="tab-content">
                     <h3>{PROJECTS[selectedProject].title}</h3>
-                    <p>{PROJECTS[selectedProject].description}</p>
+
+                    <p className="project-extra">{PROJECTS[selectedProject].extra}</p>
+
+                     <ul className="project-list">
+                        {PROJECTS[selectedProject].description.map((item, index) => (
+                        <li key={index}>{item}</li>
+                        ))}
+                    </ul>
+                    
                     <a 
                         href={PROJECTS[selectedProject].link} 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="project-link"
                     >
-                        🔗 View project
+                        🔗 GitHub source code
                     </a>
                 </div>
             )}

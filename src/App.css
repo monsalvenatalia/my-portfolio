@@ -164,6 +164,7 @@ h1, h2, h3 {
   margin: 1rem 0;
   padding: 0;
   display: flex;
+  justify-content: center;
   gap: 0.5rem;
   list-style: none;
 }
@@ -202,4 +203,24 @@ h1, h2, h3 {
 .project-link:hover {
   color: #21a1f1;
   text-decoration: underline;
+}
+
+.project-list {
+  margin: 0.5rem 0 1rem;
+  padding-left: 1.2rem;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.project-list li {
+  margin-bottom: 0.4rem;
+  color: #d1c4e9;
+  list-style-type: "▹ ";
+}
+
+.project-extra {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #b8a7d9;
+  font-style: italic;
 }

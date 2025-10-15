@@ -17,18 +17,20 @@ export default function About() {
             <img src={avatar} alt="Avatar" className="avatar" />
             <h2 className="about-title">Hi, I'm Natalia</h2>
             <p className="about-text">
-                I'm a mathematician passionate about computer science, software development and DevOps practices. 
+                I'm a mathematician turned full-stack developer, passionate about building reliable software and exploring the intersection between programming, data, and infrastructure. 
             </p>
 
            <section className="about-cards">
                 <div className="info-card">
                     <h3>My interests</h3>
-                    <p>Full Stack Web development, Machine Learning concepts, DevOps practices and environments.</p>
+                    <p>Full Stack Web development, database design, machine learning models, and DevOps practices.</p>
+                    <p>I'm looking forward to deepening my knowledge in cloud services and SaaS solutions.</p>
                 </div>
 
                 <div className="info-card">
                     <h3>Hobbies</h3>
-                    <p>Outside of work, I enjoy hiking, taking pictures and learning languages.</p>
+                    <p>Outside of work, I love hiking, analog photography, and cinema.</p>
+                    <p>I'm passionate about languages and often watch films in their original versions to discover new cultures through them.</p>
                 </div>
            </section>
         </section>
