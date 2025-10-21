@@ -6,7 +6,7 @@
   "homepage": "https://monsalvenatalia.github.io/my-portfolio",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp dist/index.html dist/404.html",
     "lint": "eslint .",
     "preview": "vite preview",
     "tailwind:build": "tailwindcss -i ./src/index.css -o ./dist/output.css --watch", 
