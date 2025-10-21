@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Emoji from "../Emoji.jsx";
 import "./Sidebar.css";
 
@@ -18,6 +18,10 @@ export default function Sidebar() {
       return !current;
     })
   }
+
+  useEffect(() => {
+    setOpen(false);
+  }, [location.pathname]);
 
   return (
     <>
